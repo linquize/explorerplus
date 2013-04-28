@@ -73,8 +73,10 @@
 #include <WinInet.h>
 #include <algorithm>
 
+#ifdef HAS_PANTHEIOS
 /* Pantheios header files. */
 #include <pantheios\pantheios.hpp>
+#endif
 
 #ifdef _WIN32_WINNT_WIN8
 #define IAsyncOperation IDataObjectAsyncCapability
