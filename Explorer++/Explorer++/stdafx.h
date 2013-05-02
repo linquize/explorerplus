@@ -71,6 +71,12 @@
 #include <sstream>
 #include <cassert>
 #include <WinInet.h>
+#include <algorithm>
 
 /* Pantheios header files. */
 #include <pantheios\pantheios.hpp>
+
+#ifdef _WIN32_WINNT_WIN8
+#define IAsyncOperation IDataObjectAsyncCapability
+#define IID_IAsyncOperation IID_IDataObjectAsyncCapability
+#endif
